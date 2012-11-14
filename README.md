@@ -12,22 +12,4 @@ DarkFoo is a library of pig UDFs written in Java. It is available through GPLv.3
 -Remove twitter style "@name" from tuple.
 -Remove twitter style hash-tags from tuple.
 
-
-##Download
------------------------------------------------------------------------------------------------------
-To download the source simply clone the git repo.
-###Clone
->git clone git@github.com:LazyDrone/darkfoo.git
-
-##Build
------------------------------------------------------------------------------------------------------
-To build and install ant is required. Also Hadoop-common and pig jars are required. Before starting installation make sure to change the paths to the jars in build.xml
-
-###Regualr build
->ant build
-
-###To rebuild clean
->ant clean-build
-
-###To clean up class files and leftover jars
->ant clean
+Check out the [Wiki](https://github.com/LazyDrone/darkfoo/wiki)
