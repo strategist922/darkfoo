@@ -17,7 +17,7 @@ DarkFoo is a library of pig UDFs written in Java. It is available through GPLv.3
 -----------------------------------------------------------------------------------------------------
 To download the source simply clone the git repo.
 ###Clone
->git clone git@git.life-hack.org:lazy-drone/pigudf-darkfoo.git
+>git clone git@github.com:LazyDrone/darkfoo.git
 
 ##Build
 -----------------------------------------------------------------------------------------------------
