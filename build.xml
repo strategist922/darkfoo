@@ -1,0 +1,20 @@
+<project name="darkfoo" basedir="." default="main">
+	<path id="classpath">
+		<fileset dir="/usr/lib/pig" includes="pig-0.10.0-cdh4.1.0-withouthadoop.jar" />
+		<fileset dir="/usr/lib/hadoop" includes="hadoop-common-2.0.0-cdh4.1.0.jar" />
+	</path>
+	<target name="clean">
+		<delete dir="build" />
+	</target>
+
+	<target name="build">
+		<mkdir dir="build/classes/" />
+		<javac srcdir="src/darkfoo/pig/misc" destdir="build/classes/" classpathref="classpath" includeantruntime="false"/>
+		<javac srcdir="src/darkfoo/pig/twitter" destdir="build/classes/" classpathref="classpath" includeantruntime="false"/>
+		<mkdir dir="build/jar" />
+		<jar destfile="build/jar/darkfoo.jar" basedir="build/classes/" />
+	</target>
+
+	<target name="clean-build" depends="clean,build" />
+
+</project>
