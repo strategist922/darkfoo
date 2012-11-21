@@ -14,18 +14,27 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with Darkfoo.  If not, see <http://www.gnu.org/licenses/>.
 */
-package darkfoo.pig.misc;
+package darkfoo.pig.Cleanup;
+
 import java.io.IOException;
 import org.apache.pig.EvalFunc;
 import org.apache.pig.data.Tuple;
 
-public class OnlyAlphNumSpace extends EvalFunc<String> {
+/*
+Usage:
+REGISTER /path/to/jar
+a = LOAD '/path/to/data/on/hdfs' USING PigStorage('\t') AS (id: chararray, mess: chararray);
+b = FOREACH a GENERATE darkfoo.pig.Cleanup.TabToSpace(mess);
+DUMP b;
+*/
+
+public class TabToSpace extends EvalFunc<String>{
   public String exec(Tuple input) throws IOException {
     if (input == null || input.size() == 0)
       return null;
     try{
       String str = (String)input.get(0);
-      return str.replaceAll("[^a-zA-Z0-9. ]", "");
+      return str.replaceAll("\t", " ");
     }catch(Exception e){
       return null;
     }

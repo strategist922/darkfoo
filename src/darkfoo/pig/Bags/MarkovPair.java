@@ -14,7 +14,8 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with Darkfoo.  If not, see <http://www.gnu.org/licenses/>.
 */
-package darkfoo.pig.misc;
+package darkfoo.pig.Bags;
+
 import java.io.IOException;
 import java.util.Iterator;
 import org.apache.pig.EvalFunc;
@@ -23,6 +24,15 @@ import org.apache.pig.data.TupleFactory;
 import org.apache.pig.data.DataBag;
 import org.apache.pig.data.BagFactory;
 
+/*
+Usage:
+REGISTER /path/to/jar
+a = LOAD '/path/to/data/on/hdfs' USING PigStorage('\t') AS (id: chararray, mess: chararray);
+b = FILTER a by mess IS NOT null;
+c = FOREACH b GENERATE darkfoo.pig.Bags.TokenizeSpace(mess) AS mess;
+d = FOREACH c GENERATE darkfoo.pig.Bags.MarkovPair(mess);
+DUMP d;
+*/
 
 public class MarkovPair extends EvalFunc<DataBag> {
 
