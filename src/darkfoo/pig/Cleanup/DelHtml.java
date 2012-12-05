@@ -84,16 +84,19 @@ public class DelHtml extends EvalFunc<String> {
 			return null;
 		try{
 			String str = (String)input.get(0);
-			String work;
-			for(String tag : TagsToDel){
-				if(str.indexOf(tag) != -1){
-					work = str.replaceAll(tag, " ");
-					str = work;
+			if(str.indexOf('&') != -1){
+				String work;
+				for(String tag : TagsToDel){
+					if(str.indexOf(tag) != -1){
+						work = str.replaceAll(tag, " ");
+						str = work;
+					}
 				}
 			}
 			return str;
 		}catch(Exception e){
 			return null;
 		}
+
 	}
 }
