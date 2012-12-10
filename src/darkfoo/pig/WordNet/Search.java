@@ -50,7 +50,7 @@ public class Search extends EvalFunc<Tuple> {
                     String adv = null;
                     String verb = null;
                     String noun = null;
-                    InputStream inStream = Search.class.getResourceAsStream("/darkfoo/dict/" + instring.charAt(0) + ".adj");
+                    InputStream inStream = Search.class.getResourceAsStream("/darkfoo/dict/" + "adj");
                     BufferedReader readbuffer = new BufferedReader(new InputStreamReader(inStream));
                     String strRead;
                     while ((strRead=readbuffer.readLine())!=null){
@@ -59,7 +59,7 @@ public class Search extends EvalFunc<Tuple> {
                             adj = splitarray[1];
                         }
                     }
-                    inStream = Search.class.getResourceAsStream("/darkfoo/dict/" + instring.charAt(0) + ".adv");
+                    inStream = Search.class.getResourceAsStream("/darkfoo/dict/" + "adv");
                     readbuffer = new BufferedReader(new InputStreamReader(inStream));
                     while ((strRead=readbuffer.readLine())!=null){
                         String splitarray[] = strRead.split("\t");
@@ -67,7 +67,7 @@ public class Search extends EvalFunc<Tuple> {
                             adv = splitarray[1];
                         }
                     }
-                    inStream = Search.class.getResourceAsStream("/darkfoo/dict/" + instring.charAt(0) + ".verb");
+                    inStream = Search.class.getResourceAsStream("/darkfoo/dict/" + "verb");
                     readbuffer = new BufferedReader(new InputStreamReader(inStream));
                     while ((strRead=readbuffer.readLine())!=null){
                         String splitarray[] = strRead.split("\t");
@@ -75,7 +75,7 @@ public class Search extends EvalFunc<Tuple> {
                             verb = splitarray[1];
                         }
                     }
-                    inStream = Search.class.getResourceAsStream("/darkfoo/dict/" + instring.charAt(0) + ".noun");
+                    inStream = Search.class.getResourceAsStream("/darkfoo/dict/" + "noun");
                     readbuffer = new BufferedReader(new InputStreamReader(inStream));
                     while ((strRead=readbuffer.readLine())!=null){
                         String splitarray[] = strRead.split("\t");
