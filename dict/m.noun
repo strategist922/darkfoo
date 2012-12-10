@@ -1,4 +1,3 @@
-ma'am	gentlewoman,dame,madam,lady,ma'am
 maar	maar
 maarianhamina	mariehamn,maarianhamina
 mac	macintosh,mac,mack,mackintosh
@@ -67,7 +66,7 @@ macule	macule,macula
 macumba	macumba
 madagascan	madagascan
 madagascar	madagascar
-madam	gentlewoman,dame,madam,lady,ma'am
+madam	gentlewoman,dame,madam,lady
 madcap	swashbuckler,hothead,lunatic,madcap,daredevil
 madeira	madeira
 madeiras	madeiras
@@ -962,7 +961,6 @@ memory	memory
 memphis	memphis
 memsahib	memsahib
 men	hands,workforce,men,manpower
-men's	men's
 menace	menace
 menage	home,household,family,menage,house
 menagerie	menagerie
@@ -1558,7 +1556,7 @@ misstatement	misstatement
 misstep	stumble,misstep,trip
 mistake	mistake,error
 mistaking	misinterpretation,mistaking,misunderstanding
-mister	mister,mr.
+mister	mister
 mistiness	vaporousness,steaminess,vapourousness,haziness,mistiness
 mistranslation	mistranslation
 mistreatment	mistreatment
@@ -2017,13 +2015,10 @@ mozart	mozart
 mozzarella	mozzarella
 mpeg	mpeg
 mps	mps
-mr.	mister,mr.
 mrd	mrd
 mri	mri
-mrs	mrs.,mrs
-mrs.	mrs.,mrs
+mrs	mrs
 mrta	mrta
-ms.	ms.
 msb	msb
 msc	msc
 msg	msg
@@ -2221,8 +2216,7 @@ mutagenesis	mutagenesis
 mutamycin	mitomycin,mutamycin
 mutant	mutant
 mutation	mutation
-mutawa	mutawa'een,mutawa
-mutawa'een	mutawa'een,mutawa
+mutawa	mutawa
 mute	mute
 muteness	silence,muteness
 mutilation	mutilation

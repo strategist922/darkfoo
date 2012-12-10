@@ -94,13 +94,18 @@ public class Search extends EvalFunc<Tuple> {
                 }catch(Exception e){
                     throw new RuntimeException("WordWeb Search error", e);
                 }
-            }
-            try{
-                Tuple res = tupleFac.newTuple(5);
-                    res.set(0, instring);
-                    return res;
-            }catch(Exception e){
-                throw new RuntimeException("WordWeb Search error", e);
+            }else{
+                try{
+                    Tuple res = tupleFac.newTuple(5);
+                        res.set(0, instring);
+                        res.set(1, "");
+                        res.set(2, "");
+                        res.set(3, "");
+                        res.set(4, "");
+                        return res;
+                }catch(Exception e){
+                    throw new RuntimeException("WordWeb Search error", e);
+                }
             }
         }
         return null;

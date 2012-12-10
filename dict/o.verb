@@ -1,5 +1,3 @@
-o.d.	o.d.,overdose
-o.k.	approve,okay,o.k.,sanction
 obey	obey
 obfuscate	obfuscate
 object	object
@@ -43,7 +41,7 @@ offset	countervail,offset
 ogle	ogle
 oil	oil
 oink	squeal,oink
-okay	approve,okay,o.k.,sanction
+okay	approve,okay,sanction
 omen	foretell,betoken,omen,augur,foreshadow,presage,forecast,predict,prognosticate,portend,auspicate,prefigure,bode
 omit	except,omit,exclude
 ooh	ooh,aah
@@ -166,7 +164,7 @@ overcrop	overcrop,overcultivate
 overcrowd	overcrowd
 overcultivate	overcrop,overcultivate
 overdo	exaggerate,overdo
-overdose	o.d.,overdose
+overdose	overdose
 overdramatise	overdramatize,overdramatise
 overdramatize	overdramatize,overdramatise
 overdraw	overdraw

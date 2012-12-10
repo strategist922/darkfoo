@@ -1,4 +1,3 @@
-b.o.	b.o.
 baa	baa
 baal	baal
 baas	baas
@@ -1388,8 +1387,6 @@ bmdo	bmdo
 bmi	bmi
 bmus	bmus
 bns	bns
-bo's'n	bosun,boatswain,bo'sun,bo's'n,bos'n
-bo'sun	bosun,boatswain,bo'sun,bo's'n,bos'n
 boa	boa
 boann	boann
 boar	boar
@@ -1414,7 +1411,7 @@ boathouse	boathouse
 boating	boating,yachting
 boatman	boater,boatman,waterman
 boatmanship	boatmanship
-boatswain	bosun,boatswain,bo'sun,bo's'n,bos'n
+boatswain	bosun,boatswain
 boatyard	boatyard
 bob	bob
 bobber	bobfloat,cork,bob,bobber
@@ -1662,7 +1659,6 @@ borstal	borstal
 bortsch	borsht,borshch,borscht,borsh,bortsch,borsch
 borzoi	borzoi
 bos	bos
-bos'n	bosun,boatswain,bo'sun,bo's'n,bos'n
 bosc	bosc
 boselaphus	boselaphus
 bosh	tosh,twaddle,taradiddle,drool,bilgewater,tarradiddle,bosh,humbug,tommyrot,boloney,baloney
@@ -1676,7 +1672,7 @@ boss	boss,hirer
 bossism	bossism
 boston	boston,beantown
 bostonian	bostonian
-bosun	bosun,boatswain,bo'sun,bo's'n,bos'n
+bosun	bosun,boatswain
 boswell	boswell
 bot	bot
 bota	bota
@@ -2051,7 +2047,7 @@ bristletail	bristletail
 bristliness	prickliness,bristliness,spininess,thorniness
 bristol	bristol
 brit	brit,briton,britisher
-britain	u.k.,britain
+britain	britain
 britches	britches
 brith	berith,berit,bris,briss,brith
 briticism	briticism,anglicism,britishism
@@ -2477,8 +2473,7 @@ buzz	bombilation,buzz,bombination
 buzzard	buzzard
 buzzer	buzzer,bell,doorbell
 buzzword	cant,buzzword
-bvd	bvd,bvd's
-bvd's	bvd,bvd's
+bvd	bvd
 bwr	bwr
 byblos	byblos
 bycatch	bycatch

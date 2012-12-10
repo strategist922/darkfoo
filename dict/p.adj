@@ -1,4 +1,3 @@
-p.m.	p.m.
 pachydermal	pachydermic,pachydermous,pachydermatous,pachydermal
 pachydermatous	pachydermic,pachydermous,pachydermatous,pachydermal
 pachydermic	pachydermic,pachydermous,pachydermatous,pachydermal
@@ -87,9 +86,9 @@ papillary	papillary,papillose
 papillate	papillate
 papilliform	papilliform
 papillose	papillary,papillose
-papist	romish,papist,papistic,papistical,popish,romanist,r.c.,roman
-papistic	romish,papist,papistic,papistical,popish,romanist,r.c.,roman
-papistical	romish,papist,papistic,papistical,popish,romanist,r.c.,roman
+papist	romish,papist,papistic,papistical,popish,romanist,roman
+papistic	romish,papist,papistic,papistical,popish,romanist,roman
+papistical	romish,papist,papistic,papistical,popish,romanist,roman
 pappose	pappose
 papuan	papuan
 parabolic	parabolic,parabolical
@@ -751,7 +750,7 @@ pontifical	apostolical,apostolic,pontifical,papal
 poor	short,inadequate,poor
 pop	popular,pop
 popeyed	popeyed,openmouthed
-popish	romish,papist,papistic,papistical,popish,romanist,r.c.,roman
+popish	romish,papist,papistic,papistical,popish,romanist,roman
 popliteal	popliteal
 popular	popular
 populated	populated

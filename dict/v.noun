@@ -103,7 +103,6 @@ vaporousness	vaporousness,steaminess,vapourousness,haziness,mistiness
 vapourousness	vaporousness,steaminess,vapourousness,haziness,mistiness
 vaquero	buckeroo,buckaroo,vaquero
 vaquita	vaquita
-var.	var.,form,strain,variant
 varan	monitor,varan
 varanidae	varanidae
 varanus	varanus
@@ -112,7 +111,7 @@ variability	variability,unevenness
 variable	variable
 variableness	variability,variableness,variance
 variance	variance,discrepancy,variant
-variant	var.,form,strain,variant
+variant	form,strain,variant
 variate	variate,variant
 variation	variation,fluctuation
 variedness	variedness

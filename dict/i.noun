@@ -1,6 +1,3 @@
-i.d.	i.d.
-i.e.d.	ied,i.e.d.
-i.w.w.	i.w.w.,iww
 iaa	iaa
 iaea	iaea
 iago	iago
@@ -97,7 +94,7 @@ idolization	idolisation,idolization,adoration
 idun	idun,ithunn
 idyl	idyll,pastorale,idyl,pastoral
 idyll	idyll
-ied	ied,i.e.d.
+ied	ied
 ifc	ifc
 igbo	igbo
 igigi	igigi
@@ -883,7 +880,7 @@ interleaf	interleaf
 interlingua	interlingua
 interlock	interlock
 interlocking	interlocking,meshing,mesh,engagement
-interlude	intermezzo,entr'acte,interlude
+interlude	intermezzo,interlude
 intermediary	intermediator,intercessor,mediator,intermediary
 intermediation	intermediation,mediation
 intermediator	intermediator,intercessor,mediator,intermediary
@@ -1191,7 +1188,7 @@ ivorybill	ivorybill
 ivp	ivp
 ivry	ivry
 iwo	iwo
-iww	i.w.w.,iww
+iww	iww
 ixobrychus	ixobrychus
 ixodes	ixodes
 ixodid	ixodid

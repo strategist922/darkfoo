@@ -92,9 +92,7 @@ public class WordWebGenerate{
                     break;
                 }
 
-                if(word.length() > 2 && Character.isLetter(word.charAt(0)) && word.indexOf('_') == -1 
-                   && word.indexOf('-') == -1 && word.indexOf('(') == -1 
-                   && word.indexOf(')') == -1){
+                if(word.length() > 2 && Character.isLetter(word.charAt(0)) && word.indexOf('_') == -1 && word.indexOf('-') == -1 && word.indexOf('(') == -1 && word.indexOf(')') == -1 && word.indexOf('\'') == -1 && word.indexOf('.') == -1 ){
                     work.add(word.toLowerCase());
                 }
             }

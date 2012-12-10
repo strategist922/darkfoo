@@ -1,4 +1,3 @@
-a'man	a'man
 aachen	aachen,aken
 aalborg	alborg,aalborg
 aalst	aalst
@@ -32,9 +31,8 @@ abbey	abbey
 abbot	abbot,archimandrite
 abbreviation	abbreviation
 abbreviator	abbreviator,abridger
-abc	rudiment,abc,abc's,alphabet,abcs
-abc's	rudiment,abc,abc's,alphabet,abcs
-abcs	rudiment,abc,abc's,alphabet,abcs
+abc	rudiment,abc,alphabet,abcs
+abcs	rudiment,abc,alphabet,abcs
 abdias	abdias,obadiah
 abdication	abdication
 abdicator	abdicator
@@ -891,7 +889,6 @@ akmola	astana,akmola
 akron	akron
 aku	yoruba,aku
 akvavit	aquavit,akvavit
-akwa'ala	akwa'ala
 ala	ala
 alabama	alabama
 alabaman	alabamian,alabaman

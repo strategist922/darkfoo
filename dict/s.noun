@@ -1,4 +1,3 @@
-s.u.v.	suv,s.u.v.
 saale	saale
 saame	sami,lapplander,saami,same,lapp,saame
 saami	sami,lapplander,saami,same,lapp,saame
@@ -220,9 +219,8 @@ sampling	sampling,sample
 samsara	samsara
 samson	strapper,bruiser,bull,samson
 samurai	samurai
-sana	sana,sana'a,sanaa
-sana'a	sana,sana'a,sanaa
-sanaa	sana,sana'a,sanaa
+sana	sana,sanaa
+sanaa	sana,sanaa
 sanatarium	sanatarium,sanitarium,sanatorium
 sanatorium	sanatarium,sanitarium,sanatorium
 sanctification	sanctification
@@ -1365,7 +1363,6 @@ sherpa	sherpa
 sherry	sherry
 shetland	zetland,shetland
 shf	shf
-shi'ite	shiite,shi'ite
 shia	shia,shiah
 shiah	shia,shiah
 shiatsu	shiatsu,acupressure
@@ -1380,7 +1377,7 @@ shifting	shifting,shift
 shiftlessness	shiftlessness
 shigella	shigella
 shiism	shiism
-shiite	shiite,shi'ite
+shiite	shiite
 shikoku	shikoku
 shillalah	shillelagh,shillalah
 shillelagh	shillelagh,shillalah
@@ -2390,7 +2387,6 @@ soteriology	soteriology
 sothis	canicula,sothis,sirius
 sotho	sotho
 sottishness	sottishness
-sou'wester	sou'wester
 soubise	soubise
 soubrette	soubrette
 soubriquet	sobriquet,byname,soubriquet,nickname,cognomen,moniker
@@ -3275,7 +3271,7 @@ straightener	straightener
 straightforwardness	downrightness,straightforwardness
 straightjacket	straightjacket,straitjacket
 straightness	straightness
-strain	var.,form,strain,variant
+strain	form,strain,variant
 strainer	strainer
 straining	overrefinement,distortion,straining,twisting,torture
 strait	sound,strait
@@ -3890,7 +3886,7 @@ suttee	suttee
 sutura	sutura,suture
 suture	sutura,suture
 suturing	suturing
-suv	suv,s.u.v.
+suv	suv
 suva	suva
 suzerain	suzerain
 suzerainty	suzerainty
