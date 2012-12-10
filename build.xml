@@ -12,6 +12,8 @@
 		<javac srcdir="src/darkfoo/pig/Bags" destdir="build/classes/" classpathref="classpath" includeantruntime="false"/>
 		<javac srcdir="src/darkfoo/pig/Cleanup" destdir="build/classes/" classpathref="classpath" includeantruntime="false"/>
 		<javac srcdir="src/darkfoo/pig/Twitter" destdir="build/classes/" classpathref="classpath" includeantruntime="false"/>
+		<javac srcdir="src/darkfoo/pig/WordNet" destdir="build/classes/" classpathref="classpath" includeantruntime="false"/>
+		<copydir src="dict" dest="build/classes/darkfoo/dict/"/>
 		<mkdir dir="build/jar" />
 		<jar destfile="build/jar/darkfoo.jar" basedir="build/classes/" />
 	</target>
