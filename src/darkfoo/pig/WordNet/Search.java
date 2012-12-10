@@ -27,6 +27,16 @@ import org.apache.pig.data.TupleFactory;
 import org.apache.pig.data.DataBag;
 import org.apache.pig.data.BagFactory;
 
+/*
+Usage:
+REGISTER /path/to/jar
+a = LOAD '/path/to/data/on/hdfs' USING PigStorage('\t') AS (id: chararray, mess: chararray);
+b = FILTER a by mess IS NOT null;
+c = FOREACH b GENERATE FLATTEN(darkfoo.pig.Bags.TokenizeSpace(mess)) AS word;
+d = FOREACH c GENERATE darkfoo.pig.WordNet.Search(word);
+DUMP d;
+*/
+
 public class Search extends EvalFunc<Tuple> {
 
     private static final TupleFactory tupleFac = TupleFactory.getInstance();
