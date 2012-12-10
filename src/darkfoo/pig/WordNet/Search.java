@@ -44,52 +44,61 @@ public class Search extends EvalFunc<Tuple> {
     public Tuple exec(Tuple input) throws IOException {
         String instring = (String) input.get(0);
         if(instring != null){
-            try {
-                String adj = null;
-                String adv = null;
-                String verb = null;
-                String noun = null;
-                InputStream inStream = Search.class.getResourceAsStream("/darkfoo/dict" + instring.charAt(0) + ".adj");
-                BufferedReader readbuffer = new BufferedReader(new InputStreamReader(inStream));
-                String strRead;
-                while ((strRead=readbuffer.readLine())!=null){
-                    String splitarray[] = strRead.split("\t");
-                    if(instring.equals(splitarray[0])){
-                        adj = splitarray[1];
+            if(instring.charAt(0) >= 'a' && instring.charAt(0) <= 'z'){
+                try {
+                    String adj = null;
+                    String adv = null;
+                    String verb = null;
+                    String noun = null;
+                    InputStream inStream = Search.class.getResourceAsStream("/darkfoo/dict/" + instring.charAt(0) + ".adj");
+                    BufferedReader readbuffer = new BufferedReader(new InputStreamReader(inStream));
+                    String strRead;
+                    while ((strRead=readbuffer.readLine())!=null){
+                        String splitarray[] = strRead.split("\t");
+                        if(instring.equals(splitarray[0])){
+                            adj = splitarray[1];
+                        }
                     }
-                }
-                inStream = Search.class.getResourceAsStream("/darkfoo/dict" + instring.charAt(0) + ".adv");
-                readbuffer = new BufferedReader(new InputStreamReader(inStream));
-                while ((strRead=readbuffer.readLine())!=null){
-                    String splitarray[] = strRead.split("\t");
-                    if(instring.equals(splitarray[0])){
-                        adv = splitarray[1];
+                    inStream = Search.class.getResourceAsStream("/darkfoo/dict/" + instring.charAt(0) + ".adv");
+                    readbuffer = new BufferedReader(new InputStreamReader(inStream));
+                    while ((strRead=readbuffer.readLine())!=null){
+                        String splitarray[] = strRead.split("\t");
+                        if(instring.equals(splitarray[0])){
+                            adv = splitarray[1];
+                        }
                     }
-                }
-                inStream = Search.class.getResourceAsStream("/darkfoo/dict" + instring.charAt(0) + ".verb");
-                readbuffer = new BufferedReader(new InputStreamReader(inStream));
-                while ((strRead=readbuffer.readLine())!=null){
-                    String splitarray[] = strRead.split("\t");
-                    if(instring.equals(splitarray[0])){
-                        verb = splitarray[1];
+                    inStream = Search.class.getResourceAsStream("/darkfoo/dict/" + instring.charAt(0) + ".verb");
+                    readbuffer = new BufferedReader(new InputStreamReader(inStream));
+                    while ((strRead=readbuffer.readLine())!=null){
+                        String splitarray[] = strRead.split("\t");
+                        if(instring.equals(splitarray[0])){
+                            verb = splitarray[1];
+                        }
                     }
-                }
-                inStream = Search.class.getResourceAsStream("/darkfoo/dict" + instring.charAt(0) + ".noun");
-                readbuffer = new BufferedReader(new InputStreamReader(inStream));
-                while ((strRead=readbuffer.readLine())!=null){
-                    String splitarray[] = strRead.split("\t");
-                    if(instring.equals(splitarray[0])){
-                        noun = splitarray[1];
+                    inStream = Search.class.getResourceAsStream("/darkfoo/dict/" + instring.charAt(0) + ".noun");
+                    readbuffer = new BufferedReader(new InputStreamReader(inStream));
+                    while ((strRead=readbuffer.readLine())!=null){
+                        String splitarray[] = strRead.split("\t");
+                        if(instring.equals(splitarray[0])){
+                            noun = splitarray[1];
+                        }
                     }
+                    Tuple res = tupleFac.newTuple(5);
+                    res.set(0, instring);
+                    res.set(1, adj);
+                    res.set(2, adv);
+                    res.set(3, verb);
+                    res.set(4, noun);
+                
+                    return res;
+                }catch(Exception e){
+                    throw new RuntimeException("WordWeb Search error", e);
                 }
+            }
+            try{
                 Tuple res = tupleFac.newTuple(5);
-                res.set(0, instring);
-                res.set(1, adj);
-                res.set(2, adv);
-                res.set(3, verb);
-                res.set(4, noun);
-            
-                return res;
+                    res.set(0, instring);
+                    return res;
             }catch(Exception e){
                 throw new RuntimeException("WordWeb Search error", e);
             }
