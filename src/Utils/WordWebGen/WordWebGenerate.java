@@ -35,14 +35,8 @@ public class WordWebGenerate{
 
     private static void buildDicts(String dict){
         try{
-            char last = 'a';
             PrintWriter out = new PrintWriter(new File("dict/" + dict));
             for (Map.Entry<String,String> entry : data.entrySet()) {
-                if(entry.getKey().charAt(0) != last){
-                    out.close();
-                    last = entry.getKey().charAt(0);
-                    out = new PrintWriter(new File("dict/" + dict));
-                }
                 out.println(entry.getKey() + "\t" + entry.getValue());
             }
             out.close();
